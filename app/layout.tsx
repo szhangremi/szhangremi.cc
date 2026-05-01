@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://szhangremi.cc'),
   title: {
     default: 'Zhang Shumeng | Personal Portfolio',
     template: '%s | Zhang Shumeng',
