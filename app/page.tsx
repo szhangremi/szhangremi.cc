@@ -57,7 +57,7 @@ export default function HomePage() {
             <div className="hidden lg:block lg:w-80 xl:w-96">
               <div className="relative aspect-[3/4] bg-muted rounded-sm overflow-hidden">
                 <Image
-                  src="/images/portrait-placeholder.svg"
+                  src="/images/portrait.jpg"
                   alt="Portrait"
                   fill
                   className="object-cover"
