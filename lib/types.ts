@@ -12,11 +12,14 @@ export interface ResearchItem {
   authors: string[];
   venue: string;
   year: number;
-  image: string;
+  image?: string;
   pdfUrl?: string;
   abstract?: string;
   tags?: string[];
   award?: string;
+  status?: string;
+  rank?: string;
+  pages?: string;
   projectLink?: string;
 }
 
@@ -90,6 +93,8 @@ export interface CVItem {
   description?: string;
   details?: string[];
   link?: string;
+  status?: string;
+  rank?: string;
 }
 
 // --------------------------------------------

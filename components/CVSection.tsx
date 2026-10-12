@@ -79,6 +79,13 @@ function CVItemComponent({ item, type }: { item: CVItem; type: string }) {
             </p>
           )}
 
+          {(item.status || item.rank) && (
+            <div className="flex flex-wrap gap-2 mt-2">
+              {item.status && <span className="tag">{item.status}</span>}
+              {item.rank && <span className="tag">{item.rank}</span>}
+            </div>
+          )}
+
           {item.description && (
             <p className="mt-1 text-sm text-muted-foreground">
               {item.description}

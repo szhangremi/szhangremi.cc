@@ -2,6 +2,7 @@
 // CV Data
 // ============================================
 import { CVSection as CVSectionType } from '@/lib/types'
+import { publicationCvItems } from '@/data/publications'
 
 export const cvData: CVSectionType[] = [
   {
@@ -88,7 +89,7 @@ export const cvData: CVSectionType[] = [
       },
       {
         id: 'exp-002',
-        title: 'Lecturer',
+        title: 'Lecturer & Administrator',
         organization: 'Wuhan Donghu University',
         location: '',
         startDate: '09/2021',
@@ -112,6 +113,16 @@ export const cvData: CVSectionType[] = [
           'Feng Huang Yun: Redesigned the homepage and detail pages, introduced customer-oriented tools, and increased the platform\'s conversion rate by 22%.',
           'Tong Meng Hui: Developed one-click customer acquisition features and CRM-supporting tools, improving purchase conversion by 10%.',
         ],
+      },
+      {
+        id: 'exp-yelp',
+        title: 'Graphic Designer',
+        organization: 'Yelp',
+        location: '',
+        startDate: '02/2019',
+        endDate: '02/2020',
+        description: '',
+        details: ['Designed the official website and advertisement.'],
       },
       {
         id: 'exp-004',
@@ -152,78 +163,7 @@ export const cvData: CVSectionType[] = [
   {
     type: 'publication',
     title: 'Publications',
-    items: [
-      {
-        id: 'pub-001',
-        title: 'FinHERtip: Embodied Identity and Human-AI Co-Creation in Accessible Musical Performance',
-        organization: 'Zhang, S.,* Liu, T.*, & Fan, M. (2025, December). SIGGRAPH Asia 2025 Art Papers',
-        startDate: '2025',
-        link: '',
-      },
-      {
-        id: 'pub-002',
-        title: 'Accessibility and Social Inclusivity: A Literature Review of Music Technology for Blind and Low Vision People',
-        organization: 'Zhang, S., Masu, R., Bettega, M., & Fan, M. (2025, October). ACM SIGACCESS Conference on Computers and Accessibility',
-        startDate: '2025',
-        link: '',
-      },
-      {
-        id: 'pub-003',
-        title: 'Quantifying Structural Aesthetic Features and Personality Trait Preferences in Kai Shu Calligraphy',
-        organization: 'Liu, T., Ye, J., Zhang, S., Zhang, K., & Liang, C. (2025, October). ACM International Conference on Multimedia',
-        startDate: '2025',
-        link: '',
-      },
-      {
-        id: 'pub-004',
-        title: 'InteRecon: Towards Reconstructing Interactivity of Personal Memorable Items in Mixed Reality',
-        organization: 'Li, Z., Li, J., Xiong, Z., Zhang, S., et al. (2025, April). CHI Conference on Human Factors in Computing Systems',
-        startDate: '2025',
-        link: '',
-      },
-      {
-        id: 'pub-005',
-        title: 'Beadwork bridge: Understanding and exploring the opportunities of beadwork in enriching school education for blind and low vision (BLV) people',
-        organization: 'Zhang, S., Lin, W., Li, Z., Jiang, R., Liang, C., Fan, M., & Masu, R. (2024, October). ACM SIGACCESS Conference on Computers and Accessibility',
-        startDate: '2024',
-        link: '',
-      },
-      {
-        id: 'pub-006',
-        title: 'Exploring the impact of artificial intelligence-generated content (AIGC) tools on social dynamics in UX collaboration',
-        organization: 'Wang, Z., Shen, L., Kuang, E., Zhang, S., & Fan, M. (2024, July). ACM designing interactive systems conference',
-        startDate: '2024',
-        link: '',
-      },
-      {
-        id: 'pub-007',
-        title: 'Toward making virtual reality (VR) more inclusive for older adults: investigating aging effect on target selection and manipulation tasks in VR',
-        organization: 'Wu, Z., Wang, D., Zhang, S., Huang, Y., Wang, Z., & Fan, M. (2024, May). CHI Conference on Human Factors in Computing Systems',
-        startDate: '2024',
-        link: '',
-      },
-      {
-        id: 'pub-008',
-        title: 'OdorV-Art: An initial exploration of an olfactory intervention for appreciating style information of artworks in virtual museum',
-        organization: 'Zhang, S., Wang, Z., Zhou, Y., Cui, H., Fu, S., Wang, Z., & Fan, M. (2023, September). International Symposium on Visual Information Communication and Interaction',
-        startDate: '2023',
-        link: '',
-      },
-      {
-        id: 'pub-009',
-        title: 'How Does Design Affects Social Relation: A Case Study On Gamification Intervenes Long-Distance Romantic Relationship',
-        organization: 'Zhang, S. (2020). Creativity and Innovation',
-        startDate: '2020',
-        link: '',
-      },
-      {
-        id: 'pub-010',
-        title: 'How Design Impacts the Social Environment: A Comparison Between Two Pet Cafes in China and the United States',
-        organization: 'Zhang, S., Bender, D., Lauren McDermott & Krysik, J. (2019). Master Thesis',
-        startDate: '2019',
-        link: '',
-      },
-    ],
+    items: publicationCvItems,
   },
   {
     type: 'custom',
@@ -235,15 +175,34 @@ export const cvData: CVSectionType[] = [
         organization: '',
         location: '',
         startDate: '2026',
-        description: 'ASSETS 2026 Program Committee',
+        details: [
+          'ACM SIGACCESS Conference on Computers and Accessibility (ASSETS 2026) Program Committee',
+          'International Conference on Human-Engaged Computing (ICHEC 2026) Program Committee',
+        ],
       },
       {
         id: 'service-002',
         title: 'Reviewing for conferences',
         organization: '',
         location: '',
-        startDate: '2025',
-        description: 'Designing Interactive Systems (DIS \'26), CHI \'26, CHI \'25, ICHEC \'25',
+        startDate: '2025–2027',
+        details: [
+          'ACM Conference on Human Factors in Computing Systems (CHI 2027)',
+          'ACM Interactive Surfaces and Spaces Conference (ISS 2026)',
+          'ACM SIGACCESS Conference on Computers and Accessibility (ASSETS 2026)',
+          'ACM Designing Interactive Systems (DIS 2026)',
+          'ACM Conference on Human Factors in Computing Systems (CHI 2026)',
+          'ACM Conference on Human Factors in Computing Systems (CHI 2025)',
+          'International Conference on Human-Engaged Computing (ICHEC 2025)',
+        ],
+      },
+      {
+        id: 'service-seminar-2026',
+        title: 'Academic Seminar',
+        organization: 'University of Bath',
+        location: 'United Kingdom',
+        startDate: '08/2026',
+        description: 'Invited academic seminar on accessibility design.',
       },
       {
         id: 'service-003',

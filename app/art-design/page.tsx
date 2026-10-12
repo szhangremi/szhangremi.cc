@@ -5,7 +5,7 @@ import { artDesignData } from '@/data/artDesign'
 
 export const metadata: Metadata = {
   title: 'Art & Design',
-  description: 'Art and design works - Interactive installations, digital art, creative coding, and more.',
+  description: 'Research-led creative practice, accessible music interfaces, performance, mixed reality, and visual design.',
 }
 
 export default function ArtDesignPage() {
@@ -16,8 +16,8 @@ export default function ArtDesignPage() {
         <header className="mb-12 md:mb-16">
           <h1 className="page-title mb-4">Art & Design</h1>
           <p className="body-text text-muted-foreground max-w-2xl">
-            My art and design works span interactive installations, digital art, creative coding, and more.
-            Each project is an exploration of the possibilities at the intersection of technology and creativity.
+            Research-led creative practice spanning accessible music interfaces, embodied performance,
+            mixed reality, computational aesthetics, and visual communication.
           </p>
         </header>
 

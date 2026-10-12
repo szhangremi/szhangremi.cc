@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { ResearchItem } from '@/lib/types'
 
 interface ResearchCardProps {
@@ -10,12 +9,12 @@ export default function ResearchCard({ item }: ResearchCardProps) {
   return (
     <article className="card group">
       <div className="flex flex-col md:flex-row">
-        {/* 左侧：论文预览图 */}
+        {/* Reserved preview area; replace the fallback in publication data later. */}
         <div className="md:w-48 lg:w-56 flex-shrink-0 bg-muted">
-          <div className="aspect-[4/3] md:aspect-auto md:h-full relative overflow-hidden">
+          <div className="aspect-[4/3] md:aspect-auto md:h-full md:min-h-52 relative overflow-hidden">
             <Image
-              src={item.image}
-              alt={`Cover image for ${item.title}`}
+              src={item.image || '/images/research-placeholder.svg'}
+              alt={`Preview image for ${item.title}`}
               fill
               className="object-cover transition-transform duration-300 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 224px"
@@ -49,6 +48,7 @@ export default function ResearchCard({ item }: ResearchCardProps) {
           {/* 发表场所 */}
           <p className="text-sm font-medium text-foreground/80 mb-3">
             {item.venue}
+            {item.pages && `, pp. ${item.pages}`}
           </p>
 
           {/* 年份和奖项 */}
@@ -57,6 +57,16 @@ export default function ResearchCard({ item }: ResearchCardProps) {
             {item.award && (
               <span className="text-xs font-medium px-2 py-0.5 bg-foreground text-background rounded-sm">
                 {item.award}
+              </span>
+            )}
+            {item.status && (
+              <span className="text-xs font-medium px-2 py-0.5 bg-muted text-foreground rounded-sm">
+                {item.status}
+              </span>
+            )}
+            {item.rank && (
+              <span className="text-xs font-medium px-2 py-0.5 border border-border text-foreground rounded-sm">
+                {item.rank}
               </span>
             )}
           </div>

@@ -19,23 +19,23 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <nav className="container-main h-16 md:h-20 flex items-center justify-between">
+      <nav className="container-main h-12 md:h-14 flex items-center justify-between">
         {/* Logo Placeholder */}
         <Link
           href="/"
-          className="flex items-center gap-3 hover:opacity-70 transition-opacity"
+          className="flex items-center gap-2.5 hover:opacity-70 transition-opacity"
         >
           {/* Logo Placeholder - Replace with your logo */}
-          <div className="w-8 h-8 bg-muted rounded-sm flex items-center justify-center">
-            <span className="text-xs text-muted-foreground">LOGO</span>
+          <div className="w-7 h-7 bg-muted rounded-sm flex items-center justify-center">
+            <span className="text-[9px] text-muted-foreground">LOGO</span>
           </div>
-          <span className="font-serif text-lg md:text-xl font-medium tracking-tight">
+          <span className="font-serif text-base md:text-lg font-medium tracking-tight">
             Zhang Shumeng
           </span>
         </Link>
 
         {/* 桌面端导航 */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-6">
           {NAV_ITEMS.map((item) => {
             const isActive = pathname === item.href ||
               (item.href !== '/' && pathname.startsWith(item.href))
@@ -44,7 +44,7 @@ export default function Navbar() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`text-sm font-medium transition-colors relative ${
+                  className={`text-xs font-medium transition-colors relative ${
                     isActive
                       ? 'text-foreground'
                       : 'text-muted-foreground hover:text-foreground'

@@ -1,233 +1,212 @@
-// ============================================
-// Art & Design Projects Data
-// ============================================
 import { ArtDesignItem } from '@/lib/types'
+
+const placeholderCover = '/images/project-placeholder.svg'
 
 export const artDesignData: ArtDesignItem[] = [
   {
-    id: 'project-001',
-    slug: 'echoes-of-light',
-    title: 'Echoes of Light',
-    description: 'An interactive installation exploring the relationship between light and sound. Participants influence the projection of light and shadow through their body movements, triggering generative soundscapes to create a unique audiovisual experience.',
-    coverImage: '/images/project-001-cover.svg',
+    id: 'project-finhertip',
+    slug: 'finhertip',
+    title: 'FinHERtip',
+    description: 'An accessible musical performance project exploring embodied identity and human–AI co-creation, developed through co-design with a blind and low-vision performer.',
+    coverImage: placeholderCover,
+    year: 2025,
+    tags: ['Accessible Music', 'Human–AI Co-Creation', 'Performance'],
+    credits: 'Shumeng Zhang, T. Liu, and M. Fan',
+    content: [
+      {
+        type: 'text',
+        content: 'FinHERtip explores embodied identity and human–AI co-creation in accessible musical performance. The digital music interface was co-designed with a blind and low-vision performer.',
+      },
+      {
+        type: 'text',
+        content: 'The work was published in the SIGGRAPH Asia 2025 Art Papers and performed at the “Second Life” Sustainable Art Festival and Market in November 2025, supported by the Guangdong Lingnan Educational Charity Foundation.',
+      },
+    ],
+  },
+  {
+    id: 'project-abacus',
+    slug: 'abacus',
+    title: 'Abacus',
+    description: 'A digital music interface designed by Shumeng Zhang and presented as an invited performance at the HKUST(GZ) Interactive Music Concert.',
+    coverImage: placeholderCover,
+    year: 2025,
+    tags: ['Digital Music Interface', 'Performance', 'Interaction Design'],
+    credits: 'Design and performance: Shumeng Zhang',
+    content: [
+      {
+        type: 'text',
+        content: 'Abacus is a digital music interface designed by Shumeng Zhang for interactive musical performance.',
+      },
+      {
+        type: 'text',
+        content: 'The project was presented as an invited performance at the Interactive Music Concert sponsored by HKUST(GZ) in May 2025.',
+      },
+    ],
+  },
+  {
+    id: 'project-beadwork-bridge',
+    slug: 'beadwork-bridge',
+    title: 'Beadwork Bridge / From Beadwork to Music Creation',
+    description: 'A participatory and longitudinal co-design project examining how beadwork can support music creation and education with blind and low-vision learners and their teachers.',
+    coverImage: placeholderCover,
     year: 2024,
-    tags: ['Interactive Installation', 'Sound Art', 'Generative Art'],
-    credits: 'Concept & Implementation: Zhang Shumeng | Technical Support: Tech Innovation Center',
-    projectVideoUrl: 'https://www.youtube.com/watch?v=YOUR_VIDEO_ID_1',
+    tags: ['Accessibility', 'Participatory Design', 'Music Education'],
+    credits: 'Research collaborators include W. Lin, Z. Li, R. Jiang, C. Liang, M. Fan, R. Masu, and T. Liu',
     content: [
       {
         type: 'text',
-        content: 'Echoes of Light is an interactive installation exploring the boundaries of perception. As visitors enter the space, their silhouettes are captured in real-time and transformed into light and shadow elements, dynamically linked with pre-recorded ambient sounds.',
-      },
-      {
-        type: 'image',
-        src: '/images/project-001-1.svg',
-        alt: 'Installation overview',
-        caption: 'Exhibition space overview',
+        content: 'Beadwork Bridge investigates opportunities for beadwork to enrich school education for blind and low-vision learners. The initial study was published at ASSETS 2024.',
       },
       {
         type: 'text',
-        content: 'The installation uses depth cameras to detect visitor positions and movements. These data points are then mapped to parameters of generative sound algorithms, creating a continuous feedback loop between visual presence and auditory response.',
-      },
-      {
-        type: 'image',
-        src: '/images/project-001-2.svg',
-        alt: 'Audience interaction scene',
-        caption: 'Audience interacting with the installation',
-      },
-      {
-        type: 'text',
-        content: 'The work is inspired by reflection on "perceptual delay"—the subtle gap between what we see and what we hear shapes our understanding of the world. Through this piece, I hope to make audiences aware of the constructive nature of perception.',
-      },
-      {
-        type: 'quote',
-        content: 'Art is not a reproduction of reality, but an exploration of perception itself.',
-        author: 'Zhang Shumeng',
-      },
-      {
-        type: 'text',
-        content: 'Technical implementation involves Max/MSP for sound synthesis, Processing for visual generation, and a custom middleware that bridges the two systems. The installation has been exhibited at multiple venues including digital art festivals and museum spaces.',
+        content: 'The later longitudinal co-design study focuses on teachers at a school for blind and low-vision students and on the transition from beadwork practice to music creation. This work is to appear in the International Journal of Human-Computer Studies.',
       },
     ],
   },
   {
-    id: 'project-002',
-    slug: 'digital-botanica',
-    title: 'Digital Botanica',
-    description: 'A digital art project visualizing plant growth data. By collecting real plant growth data through sensors and transforming it into abstract visual forms, it explores the boundary between nature and the digital.',
-    coverImage: '/images/project-002-cover.svg',
+    id: 'project-to-perform-to-live',
+    slug: 'to-perform-to-live',
+    title: 'To Perform / To Live',
+    description: 'A human–AI co-created embodied performance project connecting digital musical instruments, everyday objects, feminism, and decolonization.',
+    coverImage: placeholderCover,
+    year: 2026,
+    tags: ['Digital Music Instruments', 'Feminism', 'Human–AI Co-Creation'],
+    credits: 'Shumeng Zhang, S. Lin, T. Liu, M. Fan, and R. Masu',
+    content: [
+      {
+        type: 'text',
+        content: 'To Perform / To Live examines digital musical instruments through feminism and decolonization, using human–AI co-created embodied experiences of daily objects as a basis for musical expression and performance.',
+      },
+      {
+        type: 'text',
+        content: 'The work was published in Proceedings of the ACM on Computer Graphics and Interactive Techniques and presented at SIGGRAPH 2026.',
+      },
+    ],
+  },
+  {
+    id: 'project-entangled-ballet',
+    slug: 'entangled-ballet',
+    title: 'Entangled Ballet',
+    description: 'A data-driven choreography project exploring embodied entanglement through performance and visual communication.',
+    coverImage: placeholderCover,
+    year: 2026,
+    tags: ['Data-Driven Choreography', 'Embodied Interaction', 'Performance'],
+    credits: 'Shumeng Zhang, W. Mao, H. Lin, Z. Wu, and P. Hui',
+    content: [
+      {
+        type: 'text',
+        content: 'Entangled Ballet is a data-driven choreography of embodied entanglement, bringing bodily performance and data into a shared expressive system.',
+      },
+      {
+        type: 'text',
+        content: 'The corresponding paper is to appear in the Proceedings of the 19th International Symposium on Visual Information Communication and Interaction in 2026.',
+      },
+    ],
+  },
+  {
+    id: 'project-brushu',
+    slug: 'brushu',
+    title: 'BruSHŪ',
+    description: 'A cross-modal interaction project translating implicit micro-actions in Chinese calligraphy into another expressive modality.',
+    coverImage: placeholderCover,
+    year: 2026,
+    tags: ['Chinese Calligraphy', 'Cross-Modal Interaction', 'Embodied Interaction'],
+    credits: 'T. Liu, Shumeng Zhang, and N. Merendino',
+    content: [
+      {
+        type: 'text',
+        content: 'BruSHŪ investigates the cross-modal translation of implicit micro-actions embedded in the embodied practice of Chinese calligraphy.',
+      },
+      {
+        type: 'text',
+        content: 'The work was published in Proceedings of the ACM on Computer Graphics and Interactive Techniques and presented at SIGGRAPH 2026.',
+      },
+    ],
+  },
+  {
+    id: 'project-interecon',
+    slug: 'interecon',
+    title: 'InteRecon',
+    description: 'A mixed-reality research project that reconstructs the interactivity of personally memorable objects.',
+    coverImage: placeholderCover,
+    year: 2025,
+    tags: ['Mixed Reality', 'Personal Objects', 'Interaction Reconstruction'],
+    externalUrl: 'https://news.mit.edu/2025/interecon-brings-personal-items-to-mixed-reality-0407',
+    credits: 'Z. Li, J. Li, Z. Xiong, Shumeng Zhang, F. Faruqi, S. Mueller, C. Liang, X. Ma, and M. Fan',
+    content: [
+      {
+        type: 'text',
+        content: 'InteRecon explores how the interactivity of personal memorable items can be reconstructed in mixed reality.',
+      },
+      {
+        type: 'text',
+        content: 'The work was published at CHI 2025 and was featured by MIT News in April 2025.',
+      },
+    ],
+  },
+  {
+    id: 'project-odorv-art',
+    slug: 'odorv-art',
+    title: 'OdorV-Art',
+    description: 'An initial exploration of olfactory intervention for communicating and appreciating artwork style information in a virtual museum.',
+    coverImage: placeholderCover,
     year: 2023,
-    tags: ['Data Art', 'Bio Art', 'Visualization'],
-    projectVideoUrl: 'https://www.youtube.com/watch?v=YOUR_VIDEO_ID_2',
+    tags: ['Olfactory Interaction', 'Virtual Museum', 'Art Appreciation'],
+    credits: 'Shumeng Zhang, Z. Wang, Y. Zhou, H. Cui, S. Fu, Z. Wang, and M. Fan',
     content: [
       {
         type: 'text',
-        content: 'Digital Botanica is an ongoing digital art research project exploring the intersection of biological systems and computational aesthetics. Collaborating with botanists, I deployed a series of sensors in a greenhouse to continuously collect plant growth data—including light intensity, temperature fluctuations, humidity levels, growth rates, and circadian rhythms.',
-      },
-      {
-        type: 'image',
-        src: '/images/project-002-1.svg',
-        alt: 'Data visualization interface',
-        caption: 'Real-time data visualization interface',
+        content: 'OdorV-Art explores the use of olfactory intervention to support the appreciation of style information in artworks presented in a virtual museum.',
       },
       {
         type: 'text',
-        content: 'This data is transformed into continuously evolving visual forms through custom algorithms. Each plant has its unique "digital counterpart" that grows and breathes in virtual space, maintaining a mysterious synchronization with its real-world counterpart.',
-      },
-      {
-        type: 'text',
-        content: 'The project raises questions about authenticity in the age of digital reproduction: Is a perfectly synchronized digital copy still "nature"? What do we gain and lose when we translate organic processes into data?',
-      },
-      {
-        type: 'image',
-        src: '/images/project-002-2.svg',
-        alt: 'Plant sensor array',
-        caption: 'Custom sensor array monitoring plant biometrics',
-      },
-      {
-        type: 'text',
-        content: 'The visualization system was built using Three.js for real-time 3D rendering and WebSocket connections for live data streaming. Viewers can observe the digital plants responding to real-time environmental changes—drooping when the soil moisture drops, brightening when sunlight increases.',
+        content: 'The work was published in the Proceedings of the 16th International Symposium on Visual Information Communication and Interaction in 2023.',
       },
     ],
   },
   {
-    id: 'project-003',
-    slug: 'urban-memories',
-    title: 'Urban Memories',
-    description: 'A photography and interactive narrative project about urban memory. Through collecting personal stories and old photographs from urban residents, it constructs a multi-dimensional archive of city memories.',
-    coverImage: '/images/project-003-cover.svg',
-    year: 2023,
-    tags: ['Photography', 'Narrative Design', 'Community Art'],
-    projectVideoUrl: 'https://www.youtube.com/watch?v=YOUR_VIDEO_ID_3',
+    id: 'project-write-on-downtown',
+    slug: 'write-on-downtown',
+    title: 'Write On Downtown, Vol. 13',
+    description: 'Cover design, illustration, and editorial layout for a magazine published by Arizona State University and Changing Hands Bookstore.',
+    coverImage: placeholderCover,
+    year: 2019,
+    tags: ['Editorial Design', 'Illustration', 'Graphic Design'],
+    externalUrl: 'https://news.asu.edu/20190423-arizona-impact-keep-writing-downtown-phoenix',
+    credits: 'Graphic design: Shumeng Zhang',
     content: [
       {
         type: 'text',
-        content: 'Urban Memories originated from my observations and reflections on urban change. Every city has countless forgotten stories that gradually disappear as old buildings are demolished and residents relocate. This project attempts to preserve these precious memories in a digital form.',
-      },
-      {
-        type: 'image',
-        src: '/images/project-003-1.svg',
-        alt: 'Urban street scene',
-        caption: 'Street scene photographed in 2022',
+        content: 'For Write On Downtown, Vol. 13, Shumeng Zhang was responsible for the cover design, illustration, and layout. The magazine was published by Arizona State University and Changing Hands Bookstore.',
       },
       {
         type: 'text',
-        content: 'During the project, I visited multiple old communities in the city, interviewed dozens of long-term residents, and collected hundreds of precious old photographs. These materials were integrated into an interactive website where users can browse, search, and even contribute their own memories.',
-      },
-      {
-        type: 'image',
-        src: '/images/project-003-2.svg',
-        alt: 'Resident interviews',
-        caption: 'Interview process with community residents',
-      },
-      {
-        type: 'text',
-        content: 'The archive features over 200 stories from residents spanning three generations, accompanied by photographs ranging from the 1950s to the present day. Each story is geotagged and connected to specific locations, creating a layered map of collective memory.',
-      },
-      {
-        type: 'text',
-        content: 'The interactive platform was designed to encourage participation: visitors can add their own memories, respond to others stories, and explore the neighborhood through a timeline-based navigation system.',
-      },
-      {
-        type: 'quote',
-        content: 'These walls remember what we have forgotten.',
-        author: 'A participant from the project',
+        content: 'The project was featured by ASU News in April 2019.',
       },
     ],
   },
   {
-    id: 'project-004',
-    slug: 'rhythm-fields',
-    title: 'Rhythm Fields',
-    description: 'A generative music visualization project. Real-time analysis of rhythmic elements in music transforms them into flowing geometric forms, creating an immersive audiovisual experience.',
-    coverImage: '/images/project-004-cover.svg',
-    year: 2022,
-    tags: ['Music Visualization', 'Generative Art', 'Real-time Rendering'],
-    projectVideoUrl: 'https://www.youtube.com/watch?v=YOUR_VIDEO_ID_4',
+    id: 'project-arizona-billboard',
+    slug: 'arizona-billboard-public-service-campaign',
+    title: 'Arizona Billboard Public Service Campaign',
+    description: 'A public-service graphic design campaign sponsored by Clear Channel Outdoor, Inc.',
+    coverImage: placeholderCover,
+    year: 2018,
+    tags: ['Graphic Design', 'Public Service', 'Leadership'],
+    credits: 'Graphic design team led by Shumeng Zhang',
     content: [
       {
         type: 'text',
-        content: 'Rhythm Fields represents my deep exploration of music visualization. Unlike traditional audio spectrograms, I focus on the structure of rhythm—beats, grooves, and breath—and map them to changes in geometric forms. The result is a visual language that speaks directly to the body.',
-      },
-      {
-        type: 'image',
-        src: '/images/project-004-1.svg',
-        alt: 'Visualization interface',
-        caption: 'Real-time visualization during a live performance',
-      },
-      {
-        type: 'text',
-        content: 'The system uses onset detection algorithms to identify rhythmic events in real-time audio streams. Each beat triggers geometric transformations—triangles rotate, circles expand, lines shift direction—creating a visual polyrhythm that mirrors the audio complexity.',
-      },
-      {
-        type: 'text',
-        content: 'The visual vocabulary was developed through extensive experimentation with different musical genres, from jazz to electronic dance music. Each genre produces distinct visual signatures while maintaining a coherent aesthetic language.',
-      },
-      {
-        type: 'image',
-        src: '/images/project-004-2.svg',
-        alt: 'Performance setup',
-        caption: 'Projection mapping during a live concert',
-      },
-      {
-        type: 'text',
-        content: 'The work has been performed at multiple music festivals and art exhibitions, including electronic music events and contemporary art spaces. Each performance is unique, as the live musicians performance engages in real-time dialogue with the visual system, producing irreproducible moments.',
-      },
-    ],
-  },
-  {
-    id: 'project-005',
-    slug: 'silent-conversations',
-    title: 'Silent Conversations',
-    description: 'An interactive installation exploring the possibilities of non-verbal communication. Two participants engage in "dialogue" through light and touch, with no language—only silent signal transmission.',
-    coverImage: '/images/project-005-cover.svg',
-    year: 2022,
-    tags: ['Interactive Installation', 'Installation Art', 'Haptic Design'],
-    projectVideoUrl: 'https://www.youtube.com/watch?v=YOUR_VIDEO_ID_5',
-    content: [
-      {
-        type: 'text',
-        content: 'Silent Conversations invites two participants into a specially designed space. They are separated but can sense each others presence through subtle environmental cues. By adjusting light brightness and temperature, participants can send "signals" to the person across.',
-      },
-      {
-        type: 'image',
-        src: '/images/project-005-1.svg',
-        alt: 'Inside the installation',
-        caption: 'Interior view of the communication pods',
-      },
-      {
-        type: 'text',
-        content: 'The installation consists of two identical pods connected through a network of sensors and actuators. When one participant adjusts their light or touches a surface, the corresponding element changes for the other. This creates a private channel of expression without words.',
-      },
-      {
-        type: 'image',
-        src: '/images/project-005-2.svg',
-        alt: 'Participant experience',
-        caption: 'Participants experiencing the installation',
-      },
-      {
-        type: 'text',
-        content: 'The project was inspired by reflection on modern communication methods—we increasingly rely on language and text while ignoring more primitive, more direct forms of communication. Here, silence is no longer an obstacle but becomes a medium of communication.',
-      },
-      {
-        type: 'quote',
-        content: 'Sometimes the most profound connections happen without a single word.',
-        author: 'Zhang Shumeng',
-      },
-      {
-        type: 'text',
-        content: 'Technical implementation includes custom hardware for light and haptic feedback, Arduino-based control systems, and Max/MSP for the communication protocol. The installation has been shown at design exhibitions and art festivals.',
+        content: 'Shumeng Zhang led a graphic design team for an Arizona public-service billboard campaign sponsored by Clear Channel Outdoor, Inc. in December 2018.',
       },
     ],
   },
 ]
 
-// Get single project by slug
 export function getProjectBySlug(slug: string): ArtDesignItem | undefined {
   return artDesignData.find((project) => project.slug === slug)
 }
 
-// Get all slugs (for static path generation)
 export function getAllSlugs(): string[] {
   return artDesignData.map((project) => project.slug)
 }
