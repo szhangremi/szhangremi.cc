@@ -72,6 +72,48 @@ export const artDesignData: ArtDesignItem[] = [
     ],
   },
   {
+    id: 'project-brushu',
+    slug: 'brushu',
+    title: 'BruSHŪ',
+    description: 'A cross-modal interaction project translating implicit micro-actions in Chinese calligraphy into another expressive modality.',
+    coverImage: '/images/brushu/Web20.jpg',
+    year: 2026,
+    tags: ['Chinese Calligraphy', 'Cross-Modal Interaction', 'Embodied Interaction'],
+    credits: 'T. Liu, Shumeng Zhang, and N. Merendino',
+    galleryImages: Array.from(
+      { length: 5 },
+      (_, index) => `/images/brushu/Web${index + 20}.jpg`
+    ),
+    content: [
+      {
+        type: 'text',
+        content: 'BruSHŪ investigates the cross-modal translation of implicit micro-actions embedded in the embodied practice of Chinese calligraphy.',
+      },
+      {
+        type: 'text',
+        content: 'The work was published in Proceedings of the ACM on Computer Graphics and Interactive Techniques and presented at SIGGRAPH 2026.',
+      },
+    ],
+  },
+  {
+    id: 'project-narrastone',
+    slug: 'narrastone',
+    title: 'Narrastone',
+    description: 'An interactive installation that reimagines stone inscription as a living interface for collective storytelling through generative calligraphy, sound, and tangible interaction.',
+    coverImage: '/images/narrastone/Web25.jpg',
+    tags: ['Sonic Art', 'Tangible Music Interface', 'Cultural Heritage'],
+    galleryImages: Array.from(
+      { length: 4 },
+      (_, index) => `/images/narrastone/Web${index + 25}.jpg`
+    ),
+    content: [
+      {
+        type: 'text',
+        content: 'Narrastone uses a twistable cube inspired by Chinese inscription culture to generate characters, shared narratives, projected calligraphic traces, and responsive sound.',
+      },
+    ],
+  },
+  {
     id: 'project-entangled-ballet',
     slug: 'entangled-ballet',
     title: 'Entangled Ballet',
@@ -88,26 +130,6 @@ export const artDesignData: ArtDesignItem[] = [
       {
         type: 'text',
         content: 'The corresponding paper is to appear in the Proceedings of the 19th International Symposium on Visual Information Communication and Interaction in 2026.',
-      },
-    ],
-  },
-  {
-    id: 'project-brushu',
-    slug: 'brushu',
-    title: 'BruSHŪ',
-    description: 'A cross-modal interaction project translating implicit micro-actions in Chinese calligraphy into another expressive modality.',
-    coverImage: placeholderCover,
-    year: 2026,
-    tags: ['Chinese Calligraphy', 'Cross-Modal Interaction', 'Embodied Interaction'],
-    credits: 'T. Liu, Shumeng Zhang, and N. Merendino',
-    content: [
-      {
-        type: 'text',
-        content: 'BruSHŪ investigates the cross-modal translation of implicit micro-actions embedded in the embodied practice of Chinese calligraphy.',
-      },
-      {
-        type: 'text',
-        content: 'The work was published in Proceedings of the ACM on Computer Graphics and Interactive Techniques and presented at SIGGRAPH 2026.',
       },
     ],
   },
