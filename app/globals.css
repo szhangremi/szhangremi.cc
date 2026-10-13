@@ -351,3 +351,109 @@ body {
 .border-border {
   border-color: var(--border);
 }
+
+/* Immersive project gallery */
+.project-gallery {
+  --gallery-ink: #1d1b18;
+  --gallery-paper: #f2eee5;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  color: var(--gallery-ink);
+  background: var(--gallery-paper);
+}
+
+.project-gallery__header {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  gap: 1.5rem;
+  padding: 0.8rem 1rem 0.55rem;
+}
+
+.project-gallery__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: fit-content;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: gap 180ms ease;
+}
+
+.project-gallery__back:hover { gap: 0.8rem; }
+
+.project-gallery__identity { text-align: center; }
+.project-gallery__identity h1 {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.05rem, 1.7vw, 1.4rem);
+  letter-spacing: -0.01em;
+}
+.project-gallery__counter {
+  justify-self: end;
+  display: flex;
+  gap: 0.45rem;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+.project-gallery__counter-divider { color: #aaa298; }
+
+.project-gallery__rail {
+  display: flex;
+  align-items: center;
+  min-height: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior: contain;
+  cursor: grab;
+  touch-action: pan-x;
+  user-select: none;
+  padding: 2px;
+}
+.project-gallery__rail.is-dragging { cursor: grabbing; }
+
+.project-gallery__frame {
+  flex: 0 0 auto;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.project-gallery__frame + .project-gallery__frame { margin-left: -2px; }
+
+.project-gallery__image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 4px);
+  width: auto;
+  overflow: hidden;
+  border: 2px solid transparent;
+  background: transparent;
+}
+.project-gallery__image {
+  width: auto;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .project-gallery__header {
+    grid-template-columns: 1fr auto;
+    padding: 0.85rem 1rem 0.6rem;
+  }
+  .project-gallery__identity { grid-column: 1 / -1; grid-row: 2; text-align: left; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-gallery__back { transition: none; }
+}

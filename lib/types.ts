@@ -51,6 +51,7 @@ export interface ArtDesignItem {
   credits?: string;
   // Project video
   projectVideoUrl?: string; // YouTube URL for project showcase video
+  galleryImages?: string[];
 }
 
 // --------------------------------------------

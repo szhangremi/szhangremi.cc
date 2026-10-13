@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Layout from '@/components/Layout'
 import MediaRenderer from '@/components/MediaRenderer'
 import VideoEmbed from '@/components/VideoEmbed'
+import HorizontalProjectGallery from '@/components/HorizontalProjectGallery'
 import { getProjectBySlug, getAllSlugs } from '@/data/artDesign'
 
 interface PageProps {
@@ -43,6 +44,14 @@ export default function ArtDesignDetailPage({ params }: PageProps) {
 
   if (!project) {
     notFound()
+  }
+
+  if (project.galleryImages?.length) {
+    return (
+      <Layout immersive>
+        <HorizontalProjectGallery project={project} />
+      </Layout>
+    )
   }
 
   return (

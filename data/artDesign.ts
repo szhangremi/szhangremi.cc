@@ -6,20 +6,24 @@ export const artDesignData: ArtDesignItem[] = [
   {
     id: 'project-finhertip',
     slug: 'finhertip',
-    title: 'FinHERtip',
-    description: 'An accessible musical performance project exploring embodied identity and human–AI co-creation, developed through co-design with a blind and low-vision performer.',
-    coverImage: placeholderCover,
+    title: 'FinHERtip / BeadBand',
+    description: 'From tactile beadwork to accessible music creation: a connected body of work on performance, education, and human–AI co-creation with blind and low-vision communities.',
+    coverImage: '/images/finhertip-beadband/Web2.jpg',
     year: 2025,
-    tags: ['Accessible Music', 'Human–AI Co-Creation', 'Performance'],
-    credits: 'Shumeng Zhang, T. Liu, and M. Fan',
+    tags: ['Accessible Music', 'Co-Design', 'Human–AI Co-Creation'],
+    credits: 'Shumeng Zhang and collaborators across the FinHERtip and BeadBand studies',
+    galleryImages: Array.from(
+      { length: 11 },
+      (_, index) => `/images/finhertip-beadband/Web${index + 1}.jpg`
+    ),
     content: [
       {
         type: 'text',
-        content: 'FinHERtip explores embodied identity and human–AI co-creation in accessible musical performance. The digital music interface was co-designed with a blind and low-vision performer.',
+        content: 'FinHERtip and BeadBand form a continuous exploration of beadwork as an accessible musical interface: from embodied performance and human–AI co-creation to music learning in schools and cross-cultural studies.',
       },
       {
         type: 'text',
-        content: 'The work was published in the SIGGRAPH Asia 2025 Art Papers and performed at the “Second Life” Sustainable Art Festival and Market in November 2025, supported by the Guangdong Lingnan Educational Charity Foundation.',
+        content: 'The work was developed through co-design with blind and low-vision performers, students, teachers, and community partners in China and Italy.',
       },
     ],
   },
@@ -44,34 +48,18 @@ export const artDesignData: ArtDesignItem[] = [
     ],
   },
   {
-    id: 'project-beadwork-bridge',
-    slug: 'beadwork-bridge',
-    title: 'Beadwork Bridge / From Beadwork to Music Creation',
-    description: 'A participatory and longitudinal co-design project examining how beadwork can support music creation and education with blind and low-vision learners and their teachers.',
-    coverImage: placeholderCover,
-    year: 2024,
-    tags: ['Accessibility', 'Participatory Design', 'Music Education'],
-    credits: 'Research collaborators include W. Lin, Z. Li, R. Jiang, C. Liang, M. Fan, R. Masu, and T. Liu',
-    content: [
-      {
-        type: 'text',
-        content: 'Beadwork Bridge investigates opportunities for beadwork to enrich school education for blind and low-vision learners. The initial study was published at ASSETS 2024.',
-      },
-      {
-        type: 'text',
-        content: 'The later longitudinal co-design study focuses on teachers at a school for blind and low-vision students and on the transition from beadwork practice to music creation. This work is to appear in the International Journal of Human-Computer Studies.',
-      },
-    ],
-  },
-  {
     id: 'project-to-perform-to-live',
     slug: 'to-perform-to-live',
     title: 'To Perform / To Live',
     description: 'A human–AI co-created embodied performance project connecting digital musical instruments, everyday objects, feminism, and decolonization.',
-    coverImage: placeholderCover,
+    coverImage: '/images/to-perform-to-live/Web12.jpg',
     year: 2026,
     tags: ['Digital Music Instruments', 'Feminism', 'Human–AI Co-Creation'],
     credits: 'Shumeng Zhang, S. Lin, T. Liu, M. Fan, and R. Masu',
+    galleryImages: Array.from(
+      { length: 8 },
+      (_, index) => `/images/to-perform-to-live/Web${index + 12}.jpg`
+    ),
     content: [
       {
         type: 'text',
