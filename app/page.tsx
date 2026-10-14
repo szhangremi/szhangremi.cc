@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import Image from 'next/image'
 import Layout from '@/components/Layout'
-import { homeInfo, homeCategories } from '@/data/home'
+import { homeInfo } from '@/data/home'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -16,7 +15,7 @@ export default function HomePage() {
         {/* Hero Section */}
         <section>
           {/* Bio + Portrait */}
-          <div className="grid lg:grid-cols-[minmax(0,1fr)_20rem] xl:grid-cols-[minmax(0,1fr)_24rem] gap-12 lg:gap-16 mb-16 md:mb-20">
+          <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-16 xl:grid-cols-[minmax(0,1fr)_24rem]">
             <div>
               {/* Name and Title */}
               <header className="mb-12 md:mb-16">
@@ -70,29 +69,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Category Links */}
-        <section>
-          <h2 className="section-title mb-8">Explore</h2>
-          <div className="grid gap-4 md:grid-cols-3">
-            {homeCategories.map((category) => (
-              <Link
-                key={category.href}
-                href={category.href}
-                className="group block p-6 border border-border rounded-sm bg-white hover:border-foreground/30 hover:shadow-md transition-all duration-200"
-              >
-                <h3 className="font-serif text-xl font-medium mb-2 group-hover:text-foreground/70 transition-colors">
-                  {category.label}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {category.description}
-                </p>
-                <div className="mt-4 text-sm font-medium text-foreground/50 group-hover:text-foreground transition-colors">
-                  →
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
       </div>
     </Layout>
   )

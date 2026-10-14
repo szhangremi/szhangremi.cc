@@ -11,6 +11,7 @@ interface ProjectGridProps {
 export default function ProjectGrid({ projects }: ProjectGridProps) {
   const [columns, setColumns] = useState(3)
   const containerRef = useRef<HTMLDivElement>(null)
+  const glassPreviewIds = new Set(projects.map((project) => project.id))
 
   // 响应式列数计算
   useEffect(() => {
@@ -51,6 +52,7 @@ export default function ProjectGrid({ projects }: ProjectGridProps) {
               key={project.id}
               project={project}
               priority={projectIndex < 2}
+              compactGlass={glassPreviewIds.has(project.id)}
             />
           ))}
         </div>

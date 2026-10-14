@@ -43,9 +43,11 @@ export interface ArtDesignItem {
   slug: string;
   title: string;
   description: string;
+  cardDescription?: string;
   coverImage: string;
   tags?: string[];
   year?: number;
+  progress?: number;
   externalUrl?: string;
   content: ContentBlock[];
   credits?: string;

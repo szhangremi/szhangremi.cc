@@ -1,15 +1,36 @@
 import { ArtDesignItem } from '@/lib/types'
 
-const placeholderCover = '/images/project-placeholder.svg'
-
 export const artDesignData: ArtDesignItem[] = [
+  {
+    id: 'project-suhaeng',
+    slug: 'suhaeng',
+    title: '수행 (Suhaeng)',
+    description: 'An evolving multi-channel video work in which ceramic practice becomes a record of repetition, duration, and transformation.',
+    cardDescription: 'Clay, gesture, and repetition unfold across multiple moving images.',
+    coverImage: '/images/project-placeholder.svg',
+    tags: ['Multi-Channel Video', 'Ceramic Practice'],
+    progress: 30,
+    credits: 'Concept and practice: Shumeng Zhang',
+    content: [
+      {
+        type: 'text',
+        content: '수행 (Suhaeng) is an evolving multi-channel video work grounded in ceramic practice. Repeated gestures of shaping, waiting, breaking, and beginning again become both material process and moving image.',
+      },
+      {
+        type: 'text',
+        content: 'Currently 30% complete, the project approaches practice as a form of duration: a quiet accumulation of touch, attention, failure, and change across multiple screens.',
+      },
+    ],
+  },
   {
     id: 'project-finhertip',
     slug: 'finhertip',
     title: 'FinHERtip / BeadBand',
     description: 'From tactile beadwork to accessible music creation: a connected body of work on performance, education, and human–AI co-creation with blind and low-vision communities.',
-    coverImage: '/images/finhertip-beadband/Web2.jpg',
+    cardDescription: 'Accessible music interfaces shaped through inclusive co-design.',
+    coverImage: '/images/artdesign-covers/finhertip-beadband.jpg',
     year: 2025,
+    progress: 80,
     tags: ['Accessible Music', 'Co-Design', 'Human–AI Co-Creation'],
     credits: 'Shumeng Zhang and collaborators across the FinHERtip and BeadBand studies',
     galleryImages: Array.from(
@@ -30,9 +51,10 @@ export const artDesignData: ArtDesignItem[] = [
   {
     id: 'project-abacus',
     slug: 'abacus',
-    title: 'Abacus',
+    title: 'BeadBand V2.0',
     description: 'A digital music interface designed by Shumeng Zhang and presented as an invited performance at the HKUST(GZ) Interactive Music Concert.',
-    coverImage: '/images/abacus/BBPerform01.jpg',
+    cardDescription: 'A digital music interface created for interactive performance.',
+    coverImage: '/images/artdesign-covers/beadband-v2.jpg',
     year: 2025,
     tags: ['Digital Music Interface', 'Performance', 'Interaction Design'],
     credits: 'Design and performance: Shumeng Zhang',
@@ -43,7 +65,7 @@ export const artDesignData: ArtDesignItem[] = [
     content: [
       {
         type: 'text',
-        content: 'Abacus is a digital music interface designed by Shumeng Zhang for interactive musical performance.',
+        content: 'BeadBand V2.0 is a digital music interface designed by Shumeng Zhang for interactive musical performance.',
       },
       {
         type: 'text',
@@ -56,7 +78,8 @@ export const artDesignData: ArtDesignItem[] = [
     slug: 'to-perform-to-live',
     title: 'To Perform / To Live',
     description: 'A human–AI co-created embodied performance project connecting digital musical instruments, everyday objects, feminism, and decolonization.',
-    coverImage: '/images/to-perform-to-live/Web12.jpg',
+    cardDescription: 'A human–AI performance shaped by bodies and everyday objects.',
+    coverImage: '/images/artdesign-covers/to-perform-to-live.jpg',
     year: 2026,
     tags: ['Digital Music Instruments', 'Feminism', 'Human–AI Co-Creation'],
     credits: 'Shumeng Zhang, S. Lin, T. Liu, M. Fan, and R. Masu',
@@ -80,7 +103,8 @@ export const artDesignData: ArtDesignItem[] = [
     slug: 'brushu',
     title: 'BruSHŪ',
     description: 'A cross-modal interaction project translating implicit micro-actions in Chinese calligraphy into another expressive modality.',
-    coverImage: '/images/brushu/Web20.jpg',
+    cardDescription: 'Translating calligraphic micro-actions across expressive modalities.',
+    coverImage: '/images/artdesign-covers/brushu.jpg',
     year: 2026,
     tags: ['Chinese Calligraphy', 'Cross-Modal Interaction', 'Embodied Interaction'],
     credits: 'T. Liu, Shumeng Zhang, and N. Merendino',
@@ -104,7 +128,8 @@ export const artDesignData: ArtDesignItem[] = [
     slug: 'narrastone',
     title: 'Narrastone',
     description: 'An interactive installation that reimagines stone inscription as a living interface for collective storytelling through generative calligraphy, sound, and tangible interaction.',
-    coverImage: '/images/narrastone/Web25.jpg',
+    cardDescription: 'Collective storytelling through calligraphy, sound, and tangible interaction.',
+    coverImage: '/images/artdesign-covers/narrastone.jpg',
     tags: ['Sonic Art', 'Tangible Music Interface', 'Cultural Heritage'],
     galleryImages: Array.from(
       { length: 4 },
@@ -122,10 +147,15 @@ export const artDesignData: ArtDesignItem[] = [
     slug: 'entangled-ballet',
     title: 'Entangled Ballet',
     description: 'A data-driven choreography project exploring embodied entanglement through performance and visual communication.',
-    coverImage: placeholderCover,
+    cardDescription: 'Data-driven choreography for bodies in an entangled system.',
+    coverImage: '/images/artdesign-covers/entangled-ballet.jpg',
     year: 2026,
     tags: ['Data-Driven Choreography', 'Embodied Interaction', 'Performance'],
     credits: 'Shumeng Zhang, W. Mao, H. Lin, Z. Wu, and P. Hui',
+    galleryImages: Array.from(
+      { length: 4 },
+      (_, index) => `/images/entangled-ballet/Web${index + 29}.jpg`
+    ),
     content: [
       {
         type: 'text',
@@ -138,80 +168,22 @@ export const artDesignData: ArtDesignItem[] = [
     ],
   },
   {
-    id: 'project-interecon',
-    slug: 'interecon',
-    title: 'InteRecon',
-    description: 'A mixed-reality research project that reconstructs the interactivity of personally memorable objects.',
-    coverImage: placeholderCover,
-    year: 2025,
-    tags: ['Mixed Reality', 'Personal Objects', 'Interaction Reconstruction'],
-    externalUrl: 'https://news.mit.edu/2025/interecon-brings-personal-items-to-mixed-reality-0407',
-    credits: 'Z. Li, J. Li, Z. Xiong, Shumeng Zhang, F. Faruqi, S. Mueller, C. Liang, X. Ma, and M. Fan',
+    id: 'project-nostalgia',
+    slug: 'nostalgia',
+    title: 'nostalgia',
+    description: 'An augmented-reality encounter that lets worn objects disclose the memories, gestures, and absences they have quietly carried.',
+    cardDescription: 'Old objects awaken as portals between memory and the present.',
+    coverImage: '/images/project-placeholder.svg',
+    tags: ['AR Development', 'Old Objects', 'Interactive Experience'],
+    credits: 'Concept and development: Shumeng Zhang',
     content: [
       {
         type: 'text',
-        content: 'InteRecon explores how the interactivity of personal memorable items can be reconstructed in mixed reality.',
+        content: 'nostalgia is an augmented-reality experience that treats old objects as quiet containers of memory. Digital traces gather around their worn surfaces, allowing the familiar to feel briefly strange, intimate, and alive.',
       },
       {
         type: 'text',
-        content: 'The work was published at CHI 2025 and was featured by MIT News in April 2025.',
-      },
-    ],
-  },
-  {
-    id: 'project-odorv-art',
-    slug: 'odorv-art',
-    title: 'OdorV-Art',
-    description: 'An initial exploration of olfactory intervention for communicating and appreciating artwork style information in a virtual museum.',
-    coverImage: placeholderCover,
-    year: 2023,
-    tags: ['Olfactory Interaction', 'Virtual Museum', 'Art Appreciation'],
-    credits: 'Shumeng Zhang, Z. Wang, Y. Zhou, H. Cui, S. Fu, Z. Wang, and M. Fan',
-    content: [
-      {
-        type: 'text',
-        content: 'OdorV-Art explores the use of olfactory intervention to support the appreciation of style information in artworks presented in a virtual museum.',
-      },
-      {
-        type: 'text',
-        content: 'The work was published in the Proceedings of the 16th International Symposium on Visual Information Communication and Interaction in 2023.',
-      },
-    ],
-  },
-  {
-    id: 'project-write-on-downtown',
-    slug: 'write-on-downtown',
-    title: 'Write On Downtown, Vol. 13',
-    description: 'Cover design, illustration, and editorial layout for a magazine published by Arizona State University and Changing Hands Bookstore.',
-    coverImage: placeholderCover,
-    year: 2019,
-    tags: ['Editorial Design', 'Illustration', 'Graphic Design'],
-    externalUrl: 'https://news.asu.edu/20190423-arizona-impact-keep-writing-downtown-phoenix',
-    credits: 'Graphic design: Shumeng Zhang',
-    content: [
-      {
-        type: 'text',
-        content: 'For Write On Downtown, Vol. 13, Shumeng Zhang was responsible for the cover design, illustration, and layout. The magazine was published by Arizona State University and Changing Hands Bookstore.',
-      },
-      {
-        type: 'text',
-        content: 'The project was featured by ASU News in April 2019.',
-      },
-    ],
-  },
-  {
-    id: 'project-arizona-billboard',
-    slug: 'arizona-billboard-public-service-campaign',
-    title: 'Arizona Billboard Public Service Campaign',
-    description: 'A public-service graphic design campaign sponsored by Clear Channel Outdoor, Inc.',
-    coverImage: placeholderCover,
-    year: 2018,
-    tags: ['Graphic Design', 'Public Service', 'Leadership'],
-    credits: 'Graphic design team led by Shumeng Zhang',
-    content: [
-      {
-        type: 'text',
-        content: 'Shumeng Zhang led a graphic design team for an Arizona public-service billboard campaign sponsored by Clear Channel Outdoor, Inc. in December 2018.',
+        content: 'The work explores how interaction can turn looking into remembering—inviting people to encounter the distance between an object as it exists now and the life it once held.',
       },
     ],
   },
