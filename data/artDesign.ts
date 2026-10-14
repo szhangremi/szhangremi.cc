@@ -32,10 +32,14 @@ export const artDesignData: ArtDesignItem[] = [
     slug: 'abacus',
     title: 'Abacus',
     description: 'A digital music interface designed by Shumeng Zhang and presented as an invited performance at the HKUST(GZ) Interactive Music Concert.',
-    coverImage: placeholderCover,
+    coverImage: '/images/abacus/BBPerform01.jpg',
     year: 2025,
     tags: ['Digital Music Interface', 'Performance', 'Interaction Design'],
     credits: 'Design and performance: Shumeng Zhang',
+    galleryImages: Array.from(
+      { length: 5 },
+      (_, index) => `/images/abacus/BBPerform0${index + 1}.jpg`
+    ),
     content: [
       {
         type: 'text',
