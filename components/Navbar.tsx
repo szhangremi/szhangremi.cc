@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { NAV_ITEMS } from '@/lib/types'
@@ -20,17 +21,21 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <nav className="container-main h-12 md:h-14 flex items-center justify-between">
-        {/* Logo Placeholder */}
+        {/* Brand */}
         <Link
           href="/"
           className="flex items-center gap-2.5 hover:opacity-70 transition-opacity"
         >
-          {/* Logo Placeholder - Replace with your logo */}
-          <div className="w-7 h-7 bg-muted rounded-sm flex items-center justify-center">
-            <span className="text-[9px] text-muted-foreground">LOGO</span>
-          </div>
+          <Image
+            src="/images/SZRlogo.png"
+            alt="SZR logo"
+            width={56}
+            height={24}
+            priority
+            className="h-6 w-14 object-contain"
+          />
           <span className="font-serif text-base md:text-lg font-medium tracking-tight">
-            Zhang Shumeng
+            Shumeng Zhang - Remi
           </span>
         </Link>
 

@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   description: '个人作品与学术展示网站 - 研究论文、艺术设计项目、简历',
   keywords: ['个人作品集', '学术论文', '艺术设计', '作品展示'],
   authors: [{ name: 'Zhang Shumeng' }],
+  icons: {
+    icon: [{ url: '/images/SZRlogo.png', type: 'image/png' }],
+    shortcut: '/images/SZRlogo.png',
+    apple: '/images/SZRlogo.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'zh_CN',

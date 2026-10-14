@@ -69,6 +69,7 @@ export interface SocialLink {
 // --------------------------------------------
 export interface HomeInfo {
   name: string;
+  alternateName: string;
   title: string;
   statement: string;
   shortBio?: string;

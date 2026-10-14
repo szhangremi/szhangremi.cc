@@ -15,20 +15,23 @@ export default function HomePage() {
       <div className="container-main py-12 md:py-20">
         {/* Hero Section */}
         <section>
-          {/* Name and Title */}
-          <header className="mb-12 md:mb-16">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-4">
-              {homeInfo.name}
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground">
-              {homeInfo.title}
-            </p>
-          </header>
+          {/* Bio + Portrait */}
+          <div className="grid lg:grid-cols-[minmax(0,1fr)_20rem] xl:grid-cols-[minmax(0,1fr)_24rem] gap-12 lg:gap-16 mb-16 md:mb-20">
+            <div>
+              {/* Name and Title */}
+              <header className="mb-12 md:mb-16">
+                <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-2">
+                  {homeInfo.name}
+                </h1>
+                <p className="mb-3 whitespace-pre-wrap text-sm tracking-wide text-muted-foreground md:text-base">
+                  {homeInfo.alternateName}
+                </p>
+                <p className="text-lg md:text-xl text-muted-foreground">
+                  {homeInfo.title}
+                </p>
+              </header>
 
-          {/* Artist Statement + Portrait - using flex to align tops */}
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 mb-16 md:mb-20">
-            {/* Left: Artist Statement */}
-            <div className="flex-1">
+              {/* Artist Statement */}
               <h2 className="sr-only">Artist Statement</h2>
               <div className="prose prose-lg max-w-none">
                 {homeInfo.statement.split('\n\n').map((paragraph, index) => {
@@ -53,17 +56,16 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right: Portrait Placeholder - hidden on mobile */}
-            <div className="hidden lg:block lg:w-80 xl:w-96">
-              <div className="relative aspect-[3/4] bg-muted rounded-sm overflow-hidden">
-                <Image
-                  src="/images/portrait.jpg"
-                  alt="Portrait"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 0px, 320px"
-                />
-              </div>
+            {/* Portrait spans from the name to the end of the bio on desktop. */}
+            <div className="relative hidden min-h-full overflow-hidden rounded-sm bg-muted lg:block">
+              <Image
+                src="/images/portrait.jpg"
+                alt="Portrait of Shumeng Zhang"
+                fill
+                priority
+                className="object-cover object-center"
+                sizes="(min-width: 1280px) 384px, (min-width: 1024px) 320px, 0px"
+              />
             </div>
           </div>
         </section>

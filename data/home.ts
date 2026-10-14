@@ -4,7 +4,8 @@
 import { HomeInfo } from '@/lib/types'
 
 export const homeInfo: HomeInfo = {
-  name: 'Zhang Shumeng',
+  name: 'Shumeng Zhang',
+  alternateName: '> 张书萌  Remi <',
   title: 'Researcher & Artist',
   statement: `As an interdisciplinary researcher and creator, I work at the intersection of technology and art. My practice encompasses human-computer interaction, creative coding, and interactive installations, aiming to create meaningful and inspiring experiences through the combination of design and technology.
 
