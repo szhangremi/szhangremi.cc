@@ -4,11 +4,43 @@ import { ResearchItem } from '@/lib/types'
 // An asterisk after an author name indicates equal contribution.
 export const publications: ResearchItem[] = [
   {
+    id: 'pub-2027-beadwork-music-creation',
+    title: 'From Beadwork to Music Creation: A Longitudinal Co-Design Study with Teachers at a School for Blind and Low-Vision Students',
+    authors: ['Zhang, S.', 'Liu, T.', 'Masu, R.', 'Fan, M.'],
+    venue: 'International Journal of Human-Computer Studies',
+    year: 2027,
+    status: 'To Appear',
+    image: '/images/research-covers/from-beadwork.jpg',
+    tags: ['Accessibility', 'Co-Design', 'Music Education'],
+  },
+  {
+    id: 'pub-2026-narrastone',
+    title: 'NarraStone: Reimagining the Stone Stele as an AI-Era Apparatus of Synthetic Memory',
+    authors: ['Liu, T.', 'Zhang, S.', 'Qu, H.', 'Zhou, H.'],
+    venue: 'Proceedings of the SIGGRAPH Asia 2026 Art Papers',
+    year: 2026,
+    status: 'To Appear',
+    rank: 'CORE A',
+    image: '/images/research-covers/narrastone.jpg',
+    tags: ['Synthetic Memory', 'Cultural Heritage', 'Interactive Art'],
+  },
+  {
+    id: 'pub-2026-entangled-ballet',
+    title: 'Entangled Ballet: A Data-Driven Choreography of Embodied Entanglement',
+    authors: ['Zhang, S.*', 'Mao, W.*', 'Lin, H.', 'Wu, Z.', 'Hui, P.'],
+    venue: 'Proceedings of the 19th International Symposium on Visual Information Communication and Interaction',
+    year: 2026,
+    status: 'To Appear',
+    image: '/images/research-covers/entangled-ballet.jpg',
+    tags: ['Data-Driven Choreography', 'Embodied Interaction', 'Performance'],
+  },
+  {
     id: 'pub-2026-beyond-upright-vr',
     title: 'Beyond Upright VR: Understanding Direct Interaction and Hand Redirection Strategies in Supine Posture',
     authors: ['Wu, Z.', 'Li, J.', 'Zhang, S.', 'Xiong, P.', 'Li, Z.', 'Fan, M.'],
     venue: 'IEEE Transactions on Visualization and Computer Graphics',
     year: 2026,
+    image: '/images/research-covers/beyond-upright.jpg',
     tags: ['Virtual Reality', 'Interaction Design', 'Accessibility'],
   },
   {
@@ -19,6 +51,7 @@ export const publications: ResearchItem[] = [
     year: 2026,
     pages: '1–12',
     status: 'Presented at SIGGRAPH 2026',
+    image: '/images/research-covers/to-perform-to-live.jpg',
     tags: ['Digital Music Instruments', 'Human–AI Co-Creation', 'Feminism'],
   },
   {
@@ -29,6 +62,7 @@ export const publications: ResearchItem[] = [
     year: 2026,
     pages: '1–13',
     status: 'Presented at SIGGRAPH 2026',
+    image: '/images/research-covers/brushu.jpg',
     tags: ['Cross-Modal Interaction', 'Chinese Calligraphy', 'Embodied Interaction'],
   },
   {
@@ -39,6 +73,7 @@ export const publications: ResearchItem[] = [
     year: 2025,
     pages: '1–8',
     rank: 'CCF A',
+    image: '/images/research-covers/finhertip.jpg',
     tags: ['Accessible Musical Performance', 'Human–AI Co-Creation', 'Embodied Interaction'],
   },
   {
@@ -49,6 +84,7 @@ export const publications: ResearchItem[] = [
     year: 2025,
     pages: '1–22',
     rank: 'CORE A',
+    image: '/images/research-covers/accessibility-and-social.jpg',
     tags: ['Accessibility', 'Music Technology', 'Literature Review'],
   },
   {
@@ -59,6 +95,7 @@ export const publications: ResearchItem[] = [
     year: 2025,
     pages: '6730–6739',
     rank: 'CCF A',
+    image: '/images/research-covers/quantifying-structural.jpg',
     tags: ['Computational Aesthetics', 'Chinese Calligraphy', 'Multimedia'],
   },
   {
@@ -69,6 +106,7 @@ export const publications: ResearchItem[] = [
     year: 2025,
     pages: '1–19',
     rank: 'CCF A',
+    image: '/images/research-covers/interecon.jpg',
     tags: ['Mixed Reality', 'Personal Objects', 'Interaction Reconstruction'],
   },
   {
@@ -79,6 +117,7 @@ export const publications: ResearchItem[] = [
     year: 2024,
     pages: '1–14',
     rank: 'CORE A',
+    image: '/images/research-covers/beadwork-bridge.jpg',
     tags: ['Accessibility', 'Beadwork', 'Education'],
   },
   {
@@ -89,6 +128,7 @@ export const publications: ResearchItem[] = [
     year: 2024,
     pages: '1594–1606',
     rank: 'CORE A',
+    image: '/images/research-covers/exploring-the-impact.jpg',
     tags: ['AIGC', 'UX Collaboration', 'Social Dynamics'],
   },
   {
@@ -99,6 +139,7 @@ export const publications: ResearchItem[] = [
     year: 2024,
     pages: '1–17',
     rank: 'CCF A',
+    image: '/images/research-covers/toward-making.jpg',
     tags: ['Virtual Reality', 'Older Adults', 'Inclusive Design'],
   },
   {
@@ -108,42 +149,8 @@ export const publications: ResearchItem[] = [
     venue: 'Proceedings of the 16th International Symposium on Visual Information Communication and Interaction',
     year: 2023,
     pages: '1–8',
+    image: '/images/research-covers/odorv-art.jpg',
     tags: ['Olfactory Interaction', 'Virtual Museum', 'Art Appreciation'],
-  },
-  {
-    id: 'pub-2020-social-relation',
-    title: 'How Does Design Affects Social Relation: A Case Study On Gamification Intervenes Long-Distance Romantic Relationship',
-    authors: ['Zhang, S.'],
-    venue: 'Creativity and Innovation, 4(10)',
-    year: 2020,
-    pages: '80–84',
-    tags: ['Gamification', 'Social Design', 'Relationships'],
-  },
-  {
-    id: 'pub-2019-pet-cafes',
-    title: 'How Design Impacts the Social Environment: A Comparison Between Two Pet Cafés in China and the United States',
-    authors: ['Zhang, S.', 'Bender, D.', 'McDermott, L.', 'Krysik, J.'],
-    venue: 'Master Thesis',
-    year: 2019,
-    tags: ['Social Environment', 'Comparative Study', 'Design Research'],
-  },
-  {
-    id: 'pub-2027-beadwork-music-creation',
-    title: 'From Beadwork to Music Creation: A Longitudinal Co-Design Study with Teachers at a School for Blind and Low-Vision Students',
-    authors: ['Zhang, S.', 'Liu, T.', 'Masu, R.', 'Fan, M.'],
-    venue: 'International Journal of Human-Computer Studies',
-    year: 2027,
-    status: 'To Appear',
-    tags: ['Accessibility', 'Co-Design', 'Music Education'],
-  },
-  {
-    id: 'pub-2026-entangled-ballet',
-    title: 'Entangled Ballet: A Data-Driven Choreography of Embodied Entanglement',
-    authors: ['Zhang, S.*', 'Mao, W.*', 'Lin, H.', 'Wu, Z.', 'Hui, P.'],
-    venue: 'Proceedings of the 19th International Symposium on Visual Information Communication and Interaction',
-    year: 2026,
-    status: 'To Appear',
-    tags: ['Data-Driven Choreography', 'Embodied Interaction', 'Performance'],
   },
   {
     id: 'pub-under-review-calligraphy',

@@ -7,26 +7,24 @@ interface ResearchCardProps {
 
 export default function ResearchCard({ item }: ResearchCardProps) {
   return (
-    <article className="card group">
-      <div className="flex flex-col md:flex-row">
+    <article className="card group lg:h-64">
+      <div className="flex flex-col lg:h-full lg:flex-row">
         {/* Reserved preview area; replace the fallback in publication data later. */}
-        <div className="md:w-48 lg:w-56 flex-shrink-0 bg-muted">
-          <div className="aspect-[4/3] md:aspect-auto md:h-full md:min-h-52 relative overflow-hidden">
-            <Image
-              src={item.image || '/images/research-placeholder.svg'}
-              alt={`Preview image for ${item.title}`}
-              fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 224px"
-            />
-          </div>
+        <div className="relative aspect-[4/3] w-full flex-shrink-0 overflow-hidden bg-muted lg:h-full lg:w-auto">
+          <Image
+            src={item.image || '/images/research-placeholder.svg'}
+            alt={`Preview image for ${item.title}`}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            sizes="(max-width: 1023px) 100vw, 342px"
+          />
         </div>
 
         {/* 右侧：论文信息 */}
-        <div className="flex-1 p-5 md:p-6 flex flex-col">
+        <div className="flex min-w-0 flex-1 flex-col p-4 md:p-5">
           {/* 标签 */}
           {item.tags && item.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-3">
+            <div className="mb-3 flex flex-wrap gap-2">
               {item.tags.slice(0, 3).map((tag) => (
                 <span key={tag} className="tag">
                   {tag}
@@ -36,36 +34,36 @@ export default function ResearchCard({ item }: ResearchCardProps) {
           )}
 
           {/* 标题 */}
-          <h3 className="card-title mb-2 group-hover:text-foreground/80 transition-colors">
+          <h3 className="card-title mb-2 transition-colors group-hover:text-foreground/80">
             {item.title}
           </h3>
 
           {/* 作者 */}
-          <p className="text-sm text-muted-foreground mb-2">
+          <p className="mb-2 text-sm text-muted-foreground">
             {item.authors.join(', ')}
           </p>
 
           {/* 发表场所 */}
-          <p className="text-sm font-medium text-foreground/80 mb-3">
+          <p className="mb-3 text-sm font-medium text-foreground/80">
             {item.venue}
             {item.pages && `, pp. ${item.pages}`}
           </p>
 
           {/* 年份和奖项 */}
-          <div className="flex items-center gap-3 mb-4">
+          <div className="mb-4 flex items-center gap-3">
             <span className="text-sm text-muted-foreground">{item.year}</span>
             {item.award && (
-              <span className="text-xs font-medium px-2 py-0.5 bg-foreground text-background rounded-sm">
+              <span className="rounded-sm bg-foreground px-2 py-0.5 text-xs font-medium text-background">
                 {item.award}
               </span>
             )}
             {item.status && (
-              <span className="text-xs font-medium px-2 py-0.5 bg-muted text-foreground rounded-sm">
+              <span className="rounded-sm bg-muted px-2 py-0.5 text-xs font-medium text-foreground">
                 {item.status}
               </span>
             )}
             {item.rank && (
-              <span className="text-xs font-medium px-2 py-0.5 border border-border text-foreground rounded-sm">
+              <span className="rounded-sm border border-border px-2 py-0.5 text-xs font-medium text-foreground">
                 {item.rank}
               </span>
             )}
@@ -73,7 +71,7 @@ export default function ResearchCard({ item }: ResearchCardProps) {
 
           {/* 摘要（如果存在） */}
           {item.abstract && (
-            <p className="text-sm text-muted-foreground line-clamp-3 mb-4 flex-1">
+            <p className="mb-3 line-clamp-2 flex-1 text-sm text-muted-foreground">
               {item.abstract}
             </p>
           )}

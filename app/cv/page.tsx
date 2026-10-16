@@ -20,7 +20,15 @@ export default function CVPage() {
             <p className="text-sm">{personalInfo.affiliation}</p>
             <p className="text-sm">{personalInfo.address}</p>
             <p className="text-sm">
-              {personalInfo.phone} · {personalInfo.email}
+              {personalInfo.phone} · {personalInfo.email} ·{' '}
+              <a
+                href={personalInfo.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 hover:text-foreground transition-colors"
+              >
+                szhangremi.cc
+              </a>
             </p>
           </div>
 
@@ -28,8 +36,13 @@ export default function CVPage() {
           <div className="mt-6">
             <a
               href={cvPdfUrl}
-              download
-              className="btn-secondary"
+              download="Shumeng_Zhang_English_CV_2026.pdf"
+              className="btn-secondary hover:opacity-90"
+              style={{
+                backgroundColor: 'transparent',
+                borderColor: 'rgb(249, 2, 2)',
+                color: 'rgb(249, 2, 2)',
+              }}
             >
               <svg
                 className="w-4 h-4 mr-2"

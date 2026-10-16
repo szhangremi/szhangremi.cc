@@ -54,7 +54,7 @@ export default function ProjectCard({ project, priority = false, compactGlass = 
           {/* Tags */}
           {project.tags && project.tags.length > 0 && (
             <div className={`flex flex-wrap gap-1.5 ${compactGlass ? 'mb-2' : 'mb-3'}`}>
-              {project.tags.slice(0, 2).map((tag) => (
+              {project.tags.slice(0, project.cardTagLimit ?? 2).map((tag) => (
                 <span key={tag} className="tag">
                   {tag}
                 </span>

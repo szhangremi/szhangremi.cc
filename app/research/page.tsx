@@ -26,7 +26,7 @@ export default function ResearchPage() {
           <p className="text-sm text-muted-foreground mb-6">
             * Authors share the same contribution.
           </p>
-          <div className="space-y-8">
+          <div className="space-y-6">
             {researchData.map((item) => (
               <ResearchCard key={item.id} item={item} />
             ))}

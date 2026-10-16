@@ -4,13 +4,17 @@ export const artDesignData: ArtDesignItem[] = [
   {
     id: 'project-suhaeng',
     slug: 'suhaeng',
-    title: '수행 (Suhaeng)',
+    title: '수행，修行(Suhaeng, XiuXing)',
     description: 'An evolving multi-channel video work in which ceramic practice becomes a record of repetition, duration, and transformation.',
     cardDescription: 'Clay, gesture, and repetition unfold across multiple moving images.',
     coverImage: '/images/project-placeholder.svg',
     tags: ['Multi-Channel Video', 'Ceramic Practice'],
     progress: 30,
     credits: 'Concept and practice: Shumeng Zhang',
+    galleryImages: [
+      '/images/suhaeng/Xiuxing1.jpg',
+      '/images/suhaeng/Xiuxing2-updated.jpg',
+    ],
     content: [
       {
         type: 'text',
@@ -31,7 +35,8 @@ export const artDesignData: ArtDesignItem[] = [
     coverImage: '/images/artdesign-covers/finhertip-beadband.jpg',
     year: 2025,
     progress: 80,
-    tags: ['Accessible Music', 'Co-Design', 'Human–AI Co-Creation'],
+    tags: ['Interactive Art', 'HCI', 'Accessible Music Interface', 'Co-Design', 'Human–AI Co-Creation'],
+    cardTagLimit: 3,
     credits: 'Shumeng Zhang and collaborators across the FinHERtip and BeadBand studies',
     galleryImages: Array.from(
       { length: 11 },

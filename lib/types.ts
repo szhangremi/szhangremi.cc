@@ -46,6 +46,7 @@ export interface ArtDesignItem {
   cardDescription?: string;
   coverImage: string;
   tags?: string[];
+  cardTagLimit?: number;
   year?: number;
   progress?: number;
   externalUrl?: string;
