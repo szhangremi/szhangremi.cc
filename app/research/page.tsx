@@ -15,9 +15,9 @@ export default function ResearchPage() {
         {/* Page Header */}
         <header className="mb-12 md:mb-16">
           <h1 className="page-title mb-4">Research</h1>
-          <p className="body-text text-muted-foreground max-w-3xl">
-            Publications spanning accessible computing, human–computer interaction, music technology,
-            embodied interaction, mixed reality, and computational aesthetics.
+          <p className="body-text w-full text-muted-foreground">
+            Publications spanning embodied interaction, mixed reality, accessible computing,
+            human–computer interaction, and music technology.
           </p>
         </header>
 

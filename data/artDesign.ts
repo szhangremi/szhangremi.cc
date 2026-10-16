@@ -7,7 +7,7 @@ export const artDesignData: ArtDesignItem[] = [
     title: '수행，修行(Suhaeng, XiuXing)',
     description: 'An evolving multi-channel video work in which ceramic practice becomes a record of repetition, duration, and transformation.',
     cardDescription: 'Clay, gesture, and repetition unfold across multiple moving images.',
-    coverImage: '/images/project-placeholder.svg',
+    coverImage: '/images/artdesign-covers/Cover_Xiuxing.jpg',
     tags: ['Multi-Channel Video', 'Ceramic Practice'],
     progress: 30,
     credits: 'Concept and practice: Shumeng Zhang',
@@ -175,10 +175,10 @@ export const artDesignData: ArtDesignItem[] = [
   {
     id: 'project-nostalgia',
     slug: 'nostalgia',
-    title: 'nostalgia',
+    title: 'Nostalgia',
     description: 'An augmented-reality encounter that lets worn objects disclose the memories, gestures, and absences they have quietly carried.',
     cardDescription: 'Old objects awaken as portals between memory and the present.',
-    coverImage: '/images/project-placeholder.svg',
+    coverImage: '/images/artdesign-covers/Cover_Nostalgia.jpg',
     tags: ['AR Development', 'Old Objects', 'Interactive Experience'],
     credits: 'Concept and development: Shumeng Zhang',
     content: [

@@ -159,6 +159,7 @@ export const publications: ResearchItem[] = [
     venue: 'Leonardo',
     year: 2025,
     status: 'Under Review',
+    image: '/images/research-covers/Cover_CanMachines.jpg',
     tags: ['Computational Aesthetics', 'Chinese Calligraphy', 'AI'],
   },
 ]

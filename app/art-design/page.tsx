@@ -15,9 +15,9 @@ export default function ArtDesignPage() {
         {/* Page Header */}
         <header className="mb-12 md:mb-16">
           <h1 className="page-title mb-4">Art & Design</h1>
-          <p className="body-text text-muted-foreground max-w-2xl">
-            Research-led creative practice spanning accessible music interfaces, embodied performance,
-            mixed reality, computational aesthetics, and visual communication.
+          <p className="body-text w-full text-muted-foreground">
+            Art work and practice-based research spanning embodied performance, mixed reality,
+            audiovisual music system and visual communication.
           </p>
         </header>
 
